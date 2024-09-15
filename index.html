@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Speak</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__grid">
+        <div class="header__logo">
+          <img
+            width="162"
+            src="./images/icons/header/logo.svg"
+            alt="let's speak language school logo"
+          />
+        </div>
+        <div class="header__search">
+          <div class="header__form">
+            <input type="text" class="header__input" placeholder="search" />
+            <button class="header__search-btn">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9055 14.32C11.5508 15.373 9.84865 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84877 15.3729 11.5511 14.3198 12.9058L20.0011 18.5872L18.5869 20.0014L12.9055 14.32Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="header__user">
+          <div class="avatar">
+            <svg
+              width="14"
+              height="17"
+              viewBox="0 0 14 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.832 8.50195C13.832 10.0273 13.5492 11.3773 12.9834 12.5518C12.4176 13.7262 11.612 14.6322 10.5664 15.2695C9.52799 15.8997 8.34277 16.2148 7.01074 16.2148C5.67871 16.2148 4.49707 15.9105 3.46582 15.3018C2.43457 14.6859 1.62891 13.8086 1.04883 12.6699C0.475911 11.5312 0.17513 10.2243 0.146484 8.74902V7.86816C0.146484 6.33561 0.425781 4.98568 0.984375 3.81836C1.55013 2.64388 2.35579 1.73796 3.40137 1.10059C4.4541 0.463216 5.65007 0.144531 6.98926 0.144531C8.31413 0.144531 9.49577 0.459635 10.5342 1.08984C11.5726 1.72005 12.3783 2.61882 12.9512 3.78613C13.5312 4.94629 13.8249 6.27832 13.832 7.78223V8.50195ZM9.99707 7.84668C9.99707 6.29264 9.73568 5.11458 9.21289 4.3125C8.69727 3.50326 7.95605 3.09863 6.98926 3.09863C5.09863 3.09863 4.09961 4.5166 3.99219 7.35254L3.98145 8.50195C3.98145 10.0345 4.23568 11.2126 4.74414 12.0361C5.2526 12.8597 6.00814 13.2715 7.01074 13.2715C7.96322 13.2715 8.69727 12.8669 9.21289 12.0576C9.72852 11.2484 9.98991 10.0846 9.99707 8.56641V7.84668Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div class="header__profile">
+            <p>User</p>
+            <button class="header__profile-btn" aria-label="toggle user menu">
+              <svg
+                width="12"
+                height="6"
+                viewBox="0 0 12 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M6 6L0 0H12L6 6Z" fill="currentColor" />
+              </svg>
+            </button>
+            <ul class="header__profile-settings">
+              <li>Edit profile</li>
+              <li>Exit</li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__alarm">
+          <button class="header__alarm-btn" aria-label="see notification">
+            <svg
+              width="18"
+              height="20"
+              viewBox="0 0 18 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask id="path-1-inside-1_1_122" fill="white">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2 7C2 3.13401 5.13401 0 9 0C12.866 0 16 3.13401 16 7V14H18V16H0V14H2V7ZM7 18V20H11V18H7Z"
+                />
+              </mask>
+              <path
+                d="M16 14H14V16H16V14ZM18 14H20V12H18V14ZM18 16V18H20V16H18ZM0 16H-2V18H0V16ZM0 14V12H-2V14H0ZM2 14V16H4V14H2ZM7 20H5V22H7V20ZM7 18V16H5V18H7ZM11 20V22H13V20H11ZM11 18H13V16H11V18ZM9 -2C4.02944 -2 0 2.02944 0 7H4C4 4.23858 6.23858 2 9 2V-2ZM18 7C18 2.02944 13.9706 -2 9 -2V2C11.7614 2 14 4.23858 14 7H18ZM18 14V7H14V14H18ZM18 12H16V16H18V12ZM20 16V14H16V16H20ZM0 18H18V14H0V18ZM-2 14V16H2V14H-2ZM2 12H0V16H2V12ZM0 7V14H4V7H0ZM9 20V18H5V20H9ZM11 18H7V22H11V18ZM9 18V20H13V18H9ZM7 20H11V16H7V20Z"
+                fill="currentColor"
+                mask="url(#path-1-inside-1_1_122)"
+              />
+            </svg>
+            <div class="header__alarm-count">1</div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="container grid-container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link nav__link_active">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 1C1.89543 1 1 1.89543 1 3V6C1 7.10457 1.89543 8 3 8H6C7.10457 8 8 7.10457 8 6V3C8 1.89543 7.10457 1 6 1H3ZM3 12C1.89543 12 1 12.8954 1 14V17C1 18.1046 1.89543 19 3 19H6C7.10457 19 8 18.1046 8 17V14C8 12.8954 7.10457 12 6 12H3ZM12 3C12 1.89543 12.8954 1 14 1H17C18.1046 1 19 1.89543 19 3V6C19 7.10457 18.1046 8 17 8H14C12.8954 8 12 7.10457 12 6V3ZM14 12C12.8954 12 12 12.8954 12 14V17C12 18.1046 12.8954 19 14 19H17C18.1046 19 19 18.1046 19 17V14C19 12.8954 18.1046 12 17 12H14Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M2 3C2 2.44772 2.44772 2 3 2V0C1.34315 0 0 1.34315 0 3H2ZM2 6V3H0V6H2ZM3 7C2.44772 7 2 6.55228 2 6H0C0 7.65685 1.34315 9 3 9V7ZM6 7H3V9H6V7ZM7 6C7 6.55228 6.55228 7 6 7V9C7.65685 9 9 7.65685 9 6H7ZM7 3V6H9V3H7ZM6 2C6.55228 2 7 2.44772 7 3H9C9 1.34315 7.65685 0 6 0V2ZM3 2H6V0H3V2ZM2 14C2 13.4477 2.44772 13 3 13V11C1.34315 11 0 12.3431 0 14H2ZM2 17V14H0V17H2ZM3 18C2.44772 18 2 17.5523 2 17H0C0 18.6569 1.34315 20 3 20V18ZM6 18H3V20H6V18ZM7 17C7 17.5523 6.55229 18 6 18V20C7.65685 20 9 18.6569 9 17H7ZM7 14V17H9V14H7ZM6 13C6.55228 13 7 13.4477 7 14H9C9 12.3431 7.65685 11 6 11V13ZM3 13H6V11H3V13ZM14 0C12.3431 0 11 1.34315 11 3H13C13 2.44772 13.4477 2 14 2V0ZM17 0H14V2H17V0ZM20 3C20 1.34315 18.6569 0 17 0V2C17.5523 2 18 2.44772 18 3H20ZM20 6V3H18V6H20ZM17 9C18.6569 9 20 7.65685 20 6H18C18 6.55228 17.5523 7 17 7V9ZM14 9H17V7H14V9ZM11 6C11 7.65685 12.3431 9 14 9V7C13.4477 7 13 6.55228 13 6H11ZM11 3V6H13V3H11ZM13 14C13 13.4477 13.4477 13 14 13V11C12.3431 11 11 12.3431 11 14H13ZM13 17V14H11V17H13ZM14 18C13.4477 18 13 17.5523 13 17H11C11 18.6569 12.3431 20 14 20V18ZM17 18H14V20H17V18ZM18 17C18 17.5523 17.5523 18 17 18V20C18.6569 20 20 18.6569 20 17H18ZM18 14V17H20V14H18ZM17 13C17.5523 13 18 13.4477 18 14H20C20 12.3431 18.6569 11 17 11V13ZM14 13H17V11H14V13Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span class="nav__link-span">Student's Office</span></a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.55279 0.105573C9.83431 -0.0351909 10.1657 -0.0351909 10.4472 0.105573L19.4472 4.60557C19.786 4.77496 20 5.12123 20 5.5V12.5H18V7.11803L10.4472 10.8944C10.1657 11.0352 9.83431 11.0352 9.55279 10.8944L0.552786 6.39443C0.214002 6.22504 0 5.87877 0 5.5C0 5.12123 0.214002 4.77496 0.552786 4.60557L9.55279 0.105573ZM3.23607 5.5L10 8.88197L16.7639 5.5L10 2.11803L3.23607 5.5ZM4.47427 10.6493C4.76909 10.4671 5.13723 10.4506 5.44721 10.6056L10 12.882L14.5528 10.6056C14.8628 10.4506 15.2309 10.4671 15.5257 10.6493C15.8205 10.8316 16 11.1534 16 11.5V16.5C16 16.8788 15.786 17.225 15.4472 17.3944L10.4472 19.8944C10.1657 20.0352 9.83431 20.0352 9.55279 19.8944L4.55279 17.3944C4.214 17.225 4 16.8788 4 16.5V11.5C4 11.1534 4.17945 10.8316 4.47427 10.6493ZM6 13.118V15.882L10 17.882L14 15.882V13.118L10.4472 14.8944C10.1657 15.0352 9.83431 15.0352 9.55279 14.8944L6 13.118Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span class="nav__link-span">Classroom</span></a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L1.44721 0.105573C1.13723 -0.0494214 0.769085 -0.0328574 0.474269 0.149349C0.179452 0.331556 0 0.653422 0 1L1 1ZM19 1H20C20 0.653422 19.8205 0.331556 19.5257 0.149349C19.2309 -0.0328574 18.8628 -0.0494214 18.5528 0.105573L19 1ZM19 14.5L19.4472 15.3944C19.786 15.225 20 14.8788 20 14.5H19ZM10 19L9.55279 19.8944C9.83431 20.0352 10.1657 20.0352 10.4472 19.8944L10 19ZM1 14.5H0C0 14.8788 0.214002 15.225 0.552786 15.3944L1 14.5ZM0.552786 1.89443L9.55279 6.39443L10.4472 4.60557L1.44721 0.105573L0.552786 1.89443ZM10.4472 6.39443L19.4472 1.89443L18.5528 0.105573L9.55279 4.60557L10.4472 6.39443ZM18 1V14.5H20V1H18ZM18.5528 13.6056L9.55279 18.1056L10.4472 19.8944L19.4472 15.3944L18.5528 13.6056ZM10.4472 18.1056L1.44721 13.6056L0.552786 15.3944L9.55279 19.8944L10.4472 18.1056ZM2 14.5V1H0V14.5H2ZM9 5.5V19H11V5.5H9Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span class="nav__link-span">Training manual</span></a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17 9H19L10 1L1 9H3V19H7V13H13V19H17V9Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="nav__link-span">Homework</span></a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.29289 0.292893C5.48043 0.105357 5.73478 0 6 0H15C15.5523 0 16 0.447715 16 1V7.49816C18.349 8.47772 20 10.796 20 13.5C20 17.0899 17.0899 20 13.5 20C11.6566 20 9.9925 19.2327 8.80957 18H1C0.447715 18 0 17.5523 0 17V6C0 5.73478 0.105357 5.48043 0.292893 5.29289L5.29289 0.292893ZM14 2V7.01894C13.835 7.00639 13.6682 7 13.5 7C9.91015 7 7 9.91015 7 13.5C7 14.3859 7.17723 15.2304 7.49816 16H2V7H6C6.55228 7 7 6.55228 7 6V2H14ZM3.41421 5H5V3.41421L3.41421 5ZM13.5 9C11.0147 9 9 11.0147 9 13.5C9 15.9853 11.0147 18 13.5 18C15.9853 18 18 15.9853 18 13.5C18 11.0147 15.9853 9 13.5 9ZM13.7593 15.6508L16.7593 12.1508L15.2407 10.8492L12.8915 13.59L11.6508 12.5265L10.3492 14.045L12.3492 15.7593L13.1085 16.41L13.7593 15.6508Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span class="nav__link-span">Exams</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main class="main">
+        <section class="hero">
+          <h1 class="visually-hidden">
+            Main page of th Language School Let’s Speak
+          </h1>
+          <div class="hero__slider slider">
+            <!--  <ul class="slider__list">
+              <li class="slider__item">
+                <img
+                  src="./images/hero-slider/1.png"
+                  alt="blue sky with Big Ben"
+                  class="slider__img"
+                />
+              </li>
+              <li class="slider__item">
+                <img
+                  src="./images/hero-slider/2.jpg"
+                  alt="london bridge"
+                  class="slider__img"
+                />
+              </li>
+              <li class="slider__item">
+                <img
+                  src="./images/hero-slider/3.jpg"
+                  alt="London's undeground station"
+                  class="slider__img"
+                />
+              </li>
+            </ul> -->
+            <button class="slider__btn slider__btn_left" aria-label="back">
+              <svg
+                width="12"
+                height="20"
+                viewBox="0 0 12 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1L2 10L11 19"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+            <button class="slider__btn slider__btn_right" aria-label="forward">
+              <svg
+                width="12"
+                height="20"
+                viewBox="0 0 12 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1L2 10L11 19"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hero__content">
+            <div class="hero__text">
+              <h2 class="hero__title">Beefeater, Cockney, Double Decker...</h2>
+              <p>
+                Take the test and find out how familiar you are with life in
+                London
+              </p>
+            </div>
+            <button class="hero__btn">
+              Take the test <span class="hero__btn-span">&rarr;</span>
+            </button>
+          </div>
+        </section>
+        <section class="cards">
+          <h2 class="visually-hidden">Interesting propositions</h2>
+          <div class="cards__list">
+            <li class="box cards__item">
+              <h3 class="box__title cards__title">English Breakfast</h3>
+              <p class="cards__text">Speaking Club</p>
+              <time datetime="" class="cards__info"
+                >10:00 — 11:00 (Mon-Fri)</time
+              >
+              <button class="cards__btn">Sign up &rarr;</button>
+            </li>
+            <li class="box cards__item">
+              <h3 class="box__title cards__title">Summer in London</h3>
+              <p class="cards__text">A month of excursions and practice</p>
+              <date datetime="2024-06-10" class="cards__info"
+                >Jun, 10 — July, 3</date
+              >
+              <button class="cards__btn">Go to &rarr;</button>
+            </li>
+            <li class="box cards__item">
+              <h3 class="box__title cards__title">Tired of English?</h3>
+              <p class="cards__text">You can learn other languages with us</p>
+              <button class="cards__btn">Open the list &rarr;</button>
+            </li>
+          </div>
+        </section>
+        <section class="video">
+          <h2 class="visually-hidden">Watching video lessons</h2>
+          <img
+            src="./images/video-img.jpg"
+            alt="english lesson"
+            class="video__img"
+            height="273"
+          />
+          <button class="video__btn video__btn_big" aria-label="play video">
+            <svg
+              width="10"
+              height="12"
+              viewBox="0 0 10 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M10 6L0 12L-5.24537e-07 0L10 6Z" fill="currentColor" />
+            </svg>
+          </button>
+        </section>
+        <section class="course box">
+          <h3 class="box__title box__title_underlined">English A1</h3>
+          <ul class="course__list"></ul>
+        </section>
+        <aside class="contacts box">
+          <h2 class="box__title box__title_underlined">Contacts</h2>
+          <ul class="contacts__list"></ul>
+        </aside>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__text">
+            &#169; <span class="footer__year"></span>
+          </div>
+          <div class="footer__text">
+            <span class="footer__school">Let's Speak</span> Language School
+          </div>
+          <div class="footer__text">
+            Created by
+            <a href="https://github.com/NataliItaly" target="_blank"
+              >Krylova Nataliya</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
